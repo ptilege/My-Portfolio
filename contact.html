@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--boxicons link-->
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--Header section-->
+    <header>
+        <a href="index.html" class="logo"><span>P</span>ortfolio</a>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" >About</a></li>
+            <li><a href="experience.html" >Experience</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html"class="active">Contact</a></li>
+
+        </ul>
+
+        <div class="menu-btn">
+            <span>INTRO</span>
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="home-text">       
+            <div class="card">
+                <div class="card-content">
+                  <h2 class="about">Get In Touch</h2>
+                  <h5>"Let's connect! Whether you have a project in mind,
+                    want to discuss potential collaborations, 
+                    or just want to say hello, I'm just a click away.
+                    Drop me a message, and let's start a conversation about
+                    how we can create something amazing together."</h5> 
+                </div>           
+            </div>
+        </div>
+
+        <div class="home-card">
+            <div class="card">
+                <div class="card-content">
+                    <form id="contactForm">
+                    <h2 class="about">Message</h2>
+                    <input type="text" id="name" name="name"placeholder="Name">
+                    <input type="text" id="email" name="email" placeholder="E-Mail">
+                    <textarea class="textarea" id="message" name="message" placeholder="Enter your message"></textarea>
+                    <button type="button" onclick="sendEmail()"  class="sendbtn">SEND</button>
+                </form>
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+            
+                
+    </section>
+
+    <footer>
+        <div class="card">
+            <div class="card-content">
+                <h4 class="about" ><i class='bx bxs-envelope'></i>&nbsp;ptilege@gmail.com</h2>
+                <h4 class="about" ><i class='bx bxs-phone'></i>&nbsp;+94 769180173</h2>
+                <h4 class="about" ><i class='bx bxs-map'></i>&nbsp;100,Berillawaththa,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Halpathota,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Baddegama</h2>
+                
+                <p>&copy; 2023 PTI Web & Systems. All Rights Reserved.</p>
+            </div>
+        </div>
+        
+    </footer>
+
+
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+     <!--Custom js file link-->
+     <script src="js/script.js"></script>
+    
+</body>
+</html>
