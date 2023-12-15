@@ -480,13 +480,13 @@ footer .card-content   {
         --p-font: 15px;
         transition: .2s;
     }
-    /* Further adjustments for smaller screens */
+    
     .btn {
         padding: 9px 20px;
         font-size: 14px;
     }
 
-    /* Adjust form input font size */
+    
     input[type="text"],
     textarea {
         font-size: 14px;
