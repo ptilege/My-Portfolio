@@ -355,6 +355,7 @@ footer .card-content   {
     }
 }
 
+
 @media(max-width: 1020px){
     .navbar a{
         margin: 0 15px;
@@ -382,6 +383,19 @@ footer .card-content   {
         display: flex;
         flex-wrap: wrap;
     }
+    .home3{
+        position: relative;
+        width: 100%;
+        height: 280vh;
+        display: flex;
+        align-items: center;
+        
+        gap: 30px;
+    }
+    .home2{
+        height: 250vh;
+        
+    }
     .home-text{
         order: 2;
     }
@@ -395,8 +409,17 @@ footer .card-content   {
         width: 100%;
         height: auto;
     }
+    .home-card {
+        width: 100%;
+    }
+    .home-card,
+    #contact {
+        height: 80vh;
+        height: fit-content;
+    }
     .card {
-        margin: 50px;
+        margin: 20px 0;
+        padding: 20px;
         
     }
     .card:nth-child(2) {
@@ -405,6 +428,20 @@ footer .card-content   {
 
     .card:nth-child(3) {
         margin-top: 30px;
+    }
+    
+    input[type="text"],
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+    }
+    
+    
+    .sendbtn {
+        width: 100%;
     }
 }
 
@@ -443,11 +480,20 @@ footer .card-content   {
         --p-font: 15px;
         transition: .2s;
     }
-    .btn{
-        padding: 9px 28px;
+    /* Further adjustments for smaller screens */
+    .btn {
+        padding: 9px 20px;
+        font-size: 14px;
+    }
+
+    /* Adjust form input font size */
+    input[type="text"],
+    textarea {
+        font-size: 14px;
     }
     
 }
+
 
 .home-img img{
     animation: imgg 2s ease-in-out infinite;
