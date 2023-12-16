@@ -317,7 +317,17 @@ footer .card-content p  {
 footer .card-content   {
     align-items: center;
 }
-
+.custom-alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: #f44336; 
+    color: #fff; 
+    text-align: center;
+    display: none; 
+}
 
 
 @media(max-width: 1850px){
