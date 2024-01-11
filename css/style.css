@@ -344,6 +344,8 @@ a{
     justify-content:center;
     z-index: 1000;
   }
+
+  
   
   @keyframes pulsing {
     to {
@@ -453,7 +455,6 @@ a{
         height: 280vh;
         display: flex;
         align-items: center;
-        
         gap: 30px;
     }
     .home2{
@@ -554,6 +555,10 @@ a{
     input[type="text"],
     textarea {
         font-size: 14px;
+    }
+
+    footer{
+        
     }
     
 }

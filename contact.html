@@ -18,6 +18,220 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
+<style>
+     /* *{
+        margin: 0;
+        padding: 0;
+        
+        color: white;
+    }
+    footer{
+        background:#343438;
+        padding-top: 50px;
+    }
+
+    .container{
+        width: 1140px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+
+    }
+    .footer-content{
+        width: 33.3%;
+    }
+    h3{
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .footer-content p{
+        width: 190px;
+        margin: auto;
+        padding: 7px;
+    }
+    .footer-content ul{
+        text-align: center;
+    }
+    .list{
+        padding: 0;
+    }
+    .list li{
+        width: auto;
+        text-align: center;
+        list-style-type: none;
+        padding: 7px;
+        position: relative;
+    }
+    .list li::before{
+        content: '';
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 100%;
+        width: 0;
+        height: 2px;
+        background:#ffae00;
+        transition-duration: .5s;
+    }
+    .list li::hover::before{
+        width: 70px;
+    }
+    .social-icons{
+        text-align: center;
+        padding: 0;
+    }
+    .social-icons li{
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+    }
+    .social-icons i{
+        color: white;
+        font-size: 25px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color: #ffae00;
+    }
+    .social-icons i:hover{
+        color: #ffae00;
+    }
+    .bottom-bar{
+        background:#ffae00;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 50px;
+    }
+    .bottom-bar p{
+        color: #343438;
+        margin: 0;
+        font-size: 16px;
+    }
+    @media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}  */
+footer {
+  background-color: #343438;
+  color: #ffffff;
+  font-size: 16px;
+}
+footer * {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.row {
+  padding: 2em 1em;
+}
+.row.primary {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  align-items: stretch;
+}
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
+}
+footer h3 {
+  width: 100%;
+  text-align: left;
+  color: #ffae00;
+  font-size: 1.6em;
+  white-space: nowrap;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+footer li:not(:first-child) {
+  margin-top: 0.8em;
+}
+footer ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer ul li a:hover {
+  color: #ffae00;
+}
+.about p {
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+}
+input,
+footer button {
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+footer button {
+  background-color: #ffae00;
+  color: #ffffff;
+}
+div.social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.4em;
+  flex-direction: row;
+  margin-top: 0.5em;
+}
+.social i:hover {
+  color: #ffae00;
+}
+.row.secondary {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.row.secondary i {
+  font-size: 1.8em;
+  color: #ffae00;
+}
+.row.secondary div {
+  padding: 1em 0;
+  width: 100%;
+}
+.row.secondary div:hover {
+  background-color: #25262e;
+}
+.copyright {
+  padding: 0.3em 1em;
+  background-color: #25262e;
+}
+.copyright p {
+  font-size: 0.9em;
+  text-align: center;
+}
+@media screen and (max-width: 850px) {
+  .row.primary {
+    grid-template-columns: 1fr;
+  }
+  .row.secondary {
+    flex-direction: column;
+  }
+}
+</style>
 <body>
 
     <!--Header section-->
@@ -77,18 +291,114 @@
         <p class="text_icon">Talk to me?</p>
       </div>
 
-    <footer>
+    <!-- <footer>
         <div class="card">
             <div class="card-content">
                 <h4 class="about" style="text-align: center;" ><i class='bx bxs-envelope'></i>&nbsp;ptilege@gmail.com</h2>
                 <h4 class="about" ><i class='bx bxs-phone'></i>&nbsp;+94 769180173</h2>
                 <h4 class="about" ><i class='bx bxs-map'></i>&nbsp;100,Berillawaththa,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Halpathota,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Baddegama</h2>
                 
-                <p>&copy; 2023 PTI Web & Systems. All Rights Reserved.</p>
+                <p>&copy; 2024 PTI Web & Systems. All Rights Reserved.</p>
             </div>
         </div>
         
-    </footer>
+    </footer> -->
+
+    <!-- <footer>
+        <div class="container">
+        <div class="footer-content">
+            <h3>Contact Me</h3>
+            <p>Email:ptilege@gmail.com</p>
+            <p>Phone:+94 76 9180 173</p>
+            <p>Address:100,Berillawaththa,Halpathota,Baddegama</p>
+        </div>
+        <div class="footer-content">
+            <h3>Quick Links</h3>
+            <ul class="list">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Experience</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h3>Follow Me</h3>
+            <ul class="social-icons">
+            <li><a href="https://www.facebook.com/ptilege/"><i class='bx bxl-facebook' ></i></a></li>
+            <a href="https://twitter.com/"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://www.linkedin.com/in/pasindu-ilege-22b448213/"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://github.com/ptilege"><i class='bx bxl-github' ></i></a>
+        </ul>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <p>&copy; 2024 PTI Web & Systems . All rights reserved</p>
+
+    </div>
+    </footer> -->
+
+    <footer>
+        <div class="row primary">
+          <div class="column about">
+            <h3>Pasindu Tharaka</h3>
+            <p style="margin-top: 50px; color: #ffffff !important;">
+              Sofware Engineer
+            </p>
+          </div>
+          <div class="column links">
+            <h3>Quick Links</h3>
+            <ul style="margin-top: 50px;">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about.html">About Us</a>
+              </li>
+              <li>
+                <a href="experience.html">Experience</a>
+              </li>
+              <li>
+                <a href="portfolio.html">Portfolio</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column subscribe">
+            <h3>Subscribe</h3>
+            <div style="margin-top: 50px;">
+              <input type="email" placeholder="Your email id here" />
+              <button>Subscribe</button>
+            </div>
+            <div class="social">
+              <i class="bx bxl-facebook"></i>
+              <a href="https://github.com/ptilege"><i class="bx bxl-github"></i></a>
+              <i class="bx bxl-linkedine"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row secondary">
+          <div>
+            <p>
+              <i class="bx bxs-phone"></i>
+            </p>
+            <p>+12 123456789</p>
+          </div>
+          <div>
+            <p><i class="bx bxs-envelope"></i></p>
+            <p>ptilege@gmail.com</p>
+          </div>
+          <div>
+            <p><i class="bx bxs-map"></i></p>
+            <p>100, Berillawaththa, Halpathota, Baddegama</p>
+          </div>
+        </div>
+        <div class="row copyright">
+          <p>Copyright &copy; 2024 PTI Systems | All Rights Reserved</p>
+        </div>
+      </footer>
 
 
     
