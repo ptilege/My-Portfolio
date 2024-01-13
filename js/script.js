@@ -27,7 +27,7 @@ sr.reveal('.home-text p',{delay:750, origin: 'right'});
 sr.reveal('.home-img',{delay:1000, origin: 'right'});
 
 sr.reveal('.home-text h2',{delay:680, origin: 'left'});
-sr.reveal('.home-text h3',{delay:750, origin: 'right'});
+// sr.reveal('.home-text h3',{delay:750, origin: 'right'});
 sr.reveal('.home-text h4',{delay:750, origin: 'right'});
 sr.reveal('.home-text h5',{delay:750, origin: 'right'});
 
