@@ -710,21 +710,13 @@ a{
 
 @media screen and (max-width: 768px) {
     .navbar {
-        display: none;
         flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: #fff; /* or any desired color */
-    }
-
-    .navbar.open {
-        display: flex;
+        justify-content: flex-start; /* Align items from top */
     }
 
     .navbar a {
         margin: 10px 0; /* Adjust margins for mobile view */
+        text-align: center; /* Center align items */
     }
 
     .menu-btn {

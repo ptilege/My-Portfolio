@@ -7,7 +7,7 @@ header('Access-Control-Allow-Methods: POST');
 header('Access-Control-Allow-Headers: Content-Type');
 
 
-require 'vendor/autoload.php'; // If you're using Composer. If not, adjust the path to the PHPMailer class files.
+require 'vendor/autoload.php'; 
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();

@@ -56,7 +56,6 @@ function sendEmail() {
         return;
     }
 
-    // Send the form data to the PHP script via AJAX
     const formData = new FormData();
     formData.append('name', name);
     formData.append('email', email);
@@ -97,13 +96,12 @@ function sendEmail() {
 }
 
 function sendEmail(event) {
-    event.preventDefault();  // Prevent form from submitting the traditional way
+    event.preventDefault();  
 
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
 
-    // Basic validation
     if (!email.trim() || !name.trim() || !message.trim()) {
         Swal.fire({
             icon: "error",
@@ -114,7 +112,6 @@ function sendEmail(event) {
         return;
     }
 
-    // Prepare data to send as JSON
     const data = {
         name: name,
         email: email,
@@ -125,15 +122,14 @@ function sendEmail(event) {
     fetch("/.netlify/functions/send-email", {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',  // Set content type to JSON
+            'Content-Type': 'application/json',  
         },
-        body: JSON.stringify(data)  // Send data as JSON string
+        body: JSON.stringify(data) 
     })
-    .then(response => response.json())  // Parse the JSON response
+    .then(response => response.json())  
     .then(data => {
-        console.log(data);  // Log the response to check it
+        console.log(data);  
 
-        // Check if email was sent successfully
         if (data.message === "Email sent successfully!") {
             Swal.fire({
                 position: "center",
@@ -143,7 +139,6 @@ function sendEmail(event) {
                 timer: 1500
             });
         } else {
-            // If something went wrong, show an error message
             Swal.fire({
                 icon: "error",
                 title: "Oops...",
@@ -153,7 +148,7 @@ function sendEmail(event) {
         }
     })
     .catch(error => {
-        console.error('Error:', error);  // Log errors
+        console.error('Error:', error);  
         Swal.fire({
             icon: "error",
             title: "Oops...",
