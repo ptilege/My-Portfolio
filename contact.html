@@ -58,7 +58,7 @@
         <div class="home-card">
             <div class="card">
                 <div class="card-content">
-                    <form  id="contactForm">
+                    <form  id="contactForm" action="/.netlify/functions/send-email" method="POST">
                         <h2 class="about">Message</h2>
                         <input type="text" id="name" name="name" placeholder="Name">
                         <input type="text" id="email" name="email" placeholder="E-Mail">
