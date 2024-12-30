@@ -14,7 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
-    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+ 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
@@ -41,31 +42,42 @@
         </div>
     </header>
 
-    <section class="home">
-        <div class="home-text">       
-            <div class="card" id="contact">
-                <div class="card-content">
-                    <h2 class="about">Get In Touch</h2>
-                    <h5>"Let's connect! Whether you have a project in mind,
-                        want to discuss potential collaborations, 
-                        or just want to say hello, I'm just a click away.
-                        Drop me a message, and let's start a conversation about
-                        how we can create something amazing together."</h5> 
-                </div>           
-            </div>
-        </div>
-
-        <div class="home-card">
-            <div class="card">
-                <div class="card-content">
-                    <form  id="contactForm" onsubmit="sendEmail(event)">
-                        <h2 class="about">Message</h2>
-                        <input type="text" id="name" name="name" placeholder="Name">
-                        <input type="text" id="email" name="email" placeholder="E-Mail">
-                        <textarea class="textarea" id="message" name="message" placeholder="Enter your message"></textarea>
-                        <button type="submit">Send Message</button>
-                    </form>
+    <section class="section">
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>
+                    Feel free to reach out to me via email, phone, or social media. I'm always open to new opportunities and collaborations!
+                </p>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>ptilege@gmail.com</span>
                 </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+94 (76) 9180-173</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Galle, Sri Lanka</span>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+    
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+                <form id="contactForm" onsubmit="sendEmail(event)">
+                    <input type="text" id="name" name="name" placeholder="Your Name" >
+                    <input type="email" id="email" name="email" placeholder="Your Email" >
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" ></textarea>
+                    <button type="submit">Send Email</button>
+                </form>
             </div>
         </div>
     </section>

@@ -13,34 +13,30 @@ $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get form data
+   
     $name = $_POST["name"];
     $email = $_POST["email"];
     $message = $_POST["message"];
 
-    // Set up email parameters
-    $to = "ptilege@gmail.com"; // Your email address
+    $to = "ptilege@gmail.com"; 
     $subject = "New message from your portfolio website";
 
-    // Create PHPMailer instance
     $mail = new PHPMailer(true);
 
     try {
-        // Server settings
-        $mail->isSMTP(); // Send using SMTP
-        $mail->Host = 'smtp.gmail.com'; // Set the SMTP server to use (e.g., Gmail: smtp.gmail.com)
-        $mail->SMTPAuth = true; // Enable SMTP authentication
-        $mail->Username = 'ptilege@gmail.com'; // Your email address
-        $mail->Password = 'hoot pkin cqtm ytfd'; // Your email password or app-specific password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption
-        $mail->Port = 587; // TCP port to connect to (587 is standard for TLS)
+        $mail->isSMTP(); 
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true; 
+        $mail->Username = 'ptilege@gmail.com'; 
+        $mail->Password = 'hoot pkin cqtm ytfd'; 
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
+        $mail->Port = 587; 
 
-        // Recipients
-        $mail->setFrom($email, $name); // From the user's email address
-        $mail->addAddress($to, 'Recipient Name'); // To your email address
+        $mail->setFrom($email, $name); 
+        $mail->addAddress($to, 'Recipient Name');
 
-        // Content
-        $mail->isHTML(true); // Set email format to HTML
+       
+        $mail->isHTML(true); 
         $mail->Subject = $subject;
         $mail->Body = "
         <html>
@@ -98,15 +94,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </body>
         </html>";
         $mail->AltBody = "Name: $name\nEmail: $email\nMessage:\n$message";
-
-        // Send email
+   
         $mail->send();
         echo json_encode(["status" => "success"]);
     } catch (Exception $e) {
         echo json_encode(["status" => "error", "message" => $mail->ErrorInfo]);
     }
 } else {
-    // Send a response to the client in case of a GET request
     echo json_encode(["status" => "error", "message" => "Invalid request method"]);
 }
 ?>
